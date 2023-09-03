@@ -11,7 +11,7 @@ import { useGetMessagesQuery } from "@/store/features/chat/message-history-api";
 import { mdiSend } from "@mdi/js";
 import Icon from "@mdi/react";
 import { count } from "console";
-import Chatbot from "@/pages/chat/chats";
+import Chatbot from "@/component/chats";
 
 interface chatHistory {
   role: string;
@@ -52,7 +52,6 @@ const mockChat = [
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  
   const [inputValue, setInputValue] = useState("");
   const [chatHistory, setChatHistory] = useState<chatHistory[]>(mockChat);
   const [isBotTyping, setIsBotTyping] = useState(false);
@@ -72,7 +71,7 @@ export default function Home() {
     ],
   };
   const { data: messages, isLoading, isError } = useGetMessagesQuery(initial);
-  console.log(messages)
+  console.log(messages);
   const handleButtonClick = () => {
     if (inputValue.trim() !== "") {
       // Append the user's message to the chat history
@@ -146,10 +145,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="w-1/4 bg-gray-200 rounded-lg m-8 p-6 ">
-                  <ChatCard content={"User-Friendly Interface:An intuitive platform that simplifies the documentation process for users"} />
+                  <ChatCard
+                    content={
+                      "User-Friendly Interface:An intuitive platform that simplifies the documentation process for users"
+                    }
+                  />
                 </div>
                 <div className="w-1/4 bg-gray-200 rounded-lg m-8 p-6 ">
-                  <ChatCard content={"Accessible Information :Easy access to essential documents and information, reducing delays"} />
+                  <ChatCard
+                    content={
+                      "Accessible Information :Easy access to essential documents and information, reducing delays"
+                    }
+                  />
                 </div>
               </div>
             </div>
@@ -228,5 +235,5 @@ export default function Home() {
 
       <Chatbot />
     </div>
-  )
+  );
 }
