@@ -17,8 +17,38 @@ interface chatHistory {
   role: string;
   message: string;
 }
-const mockChat = [{ "role": "string",
-  "message": "asdfg"}]
+const mockChat = [
+  {
+    role: "User",
+    message:
+      "hi i want to start the process for having a birth certificate, where can i go ?",
+  },
+  {
+    role: "Bot",
+    message:
+      "Hello! You can initiate the process for obtaining a birth certificate by visiting your local kebele administrative office. They will assist you in starting the application process and guide you through the required steps.",
+  },
+  {
+    role: "User",
+    message: "yes i have, i don't know what is required to get the certificate",
+  },
+  {
+    role: "Bot",
+    message:
+      "No problem, I can help you with that. To obtain a birth certificate, you'll typically need to provide the following information and documents:\n\n1. Full name of the newborn\n2. Date of birth\n3. Place of birth\n4. Names of parents\n5. Parent's identification documents (e.g., ID cards, passports)",
+  },
+  {
+    role: "User",
+    message:
+      "and also i want to know how long it will take me to have the certificate ?",
+  },
+  {
+    role: "Bot",
+    message:
+      "The processing time for obtaining a birth certificate can vary depending on several factors, including the administrative procedures in your kebele and any specific requirements they may have. Typically, it may take a few days to a few weeks to receive the birth certificate after submitting your application.",
+  },
+  { role: "User", message: "ok thank you, i will ask you if i have any" },
+];
 const Index = () => {
   const [inputValue, setInputValue] = useState("");
   const [chatHistory, setChatHistory] = useState<chatHistory[]>(mockChat);
