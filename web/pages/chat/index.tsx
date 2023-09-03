@@ -11,7 +11,7 @@ import { useGetMessagesQuery } from "@/store/features/chat/message-history-api";
 import { mdiSend } from "@mdi/js";
 import Icon from "@mdi/react";
 import { count } from "console";
-import Chatbot from "@/component/chats";
+import Chatbot from "./chats";
 
 interface chatHistory {
   role: string;
@@ -69,7 +69,7 @@ const Index = () => {
     ],
   };
   const { data: messages, isLoading, isError } = useGetMessagesQuery(initial);
-  console.log(messages);
+  console.log(messages)
   const handleButtonClick = () => {
     if (inputValue.trim() !== "") {
       // Append the user's message to the chat history
@@ -143,18 +143,10 @@ const Index = () => {
                   />
                 </div>
                 <div className="w-1/4 bg-gray-200 rounded-lg m-8 p-6 ">
-                  <ChatCard
-                    content={
-                      "User-Friendly Interface:An intuitive platform that simplifies the documentation process for users"
-                    }
-                  />
+                  <ChatCard content={"User-Friendly Interface:An intuitive platform that simplifies the documentation process for users"} />
                 </div>
                 <div className="w-1/4 bg-gray-200 rounded-lg m-8 p-6 ">
-                  <ChatCard
-                    content={
-                      "Accessible Information :Easy access to essential documents and information, reducing delays"
-                    }
-                  />
+                  <ChatCard content={"Accessible Information :Easy access to essential documents and information, reducing delays"} />
                 </div>
               </div>
             </div>
