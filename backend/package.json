@@ -1,0 +1,37 @@
+{
+  "name": "afridata",
+  "version": "1.0.0",
+  "description": "A project for an AI themed hackathon",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrookZewdu/2023-a2sv-hack-quarter-finals.git"
+  },
+  "keywords": [
+    "documentation"
+  ],
+  "author": "Biruk Zewdu Bayle <brookzewdu09@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrookZewdu/2023-a2sv-hack-quarter-finals/issues"
+  },
+  "homepage": "https://github.com/BrookZewdu/2023-a2sv-hack-quarter-finals#readme",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "mongodb-memory-server": "^8.15.1",
+    "mongoose": "^7.5.0",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17"
+  }
+}

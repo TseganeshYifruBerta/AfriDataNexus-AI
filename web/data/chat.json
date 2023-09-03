@@ -1,0 +1,27 @@
+{
+  "userMessage": "hi i want to start the process for having a birth certificate, where can i go ?",
+  "chatHistory": [
+    {
+      "role": "Bot",
+      "content": "Hello! How can i assist you today"
+    },
+    {
+      "role": "Bot",
+      "content": "It looks like you are confused how the process is on having a birth certificate,\n don't worry, am here for you \n You can initiate the process for obtaining a birth certificate by visiting your local kebele administrative office. They will assist you in starting the application process and guide you through the required steps. If you need further assistance or have specific questions, feel free to ask!"
+    },
+
+    {
+      "role": "Bot",
+      "content": "No problem, I can help you with that. To obtain a birth certificate, you'll typically need to provide the following information and documents:\n\n1. Full name of the newborn\n2. Date of birth\n3. Place of birth\n4. Names of parents\n5. Parent's identification documents (e.g., ID cards, passports)\n\nPlease make sure to visit the kebele administrative office with these details, and they will guide you through the application process. If you have any specific questions or need further assistance, feel free to ask!"
+    },
+
+    {
+      "role": "Bot",
+      "content": "The processing time for obtaining a birth certificate can vary depending on several factors, including the administrative procedures in your kebele and any specific requirements they may have. Typically, it may take a few days to a few weeks to receive the birth certificate after submitting your application.\n\nI recommend visiting your local kebele administrative office to inquire about their specific processing times and any expedited options that may be available. They will provide you with the most accurate information for your situation."
+    },
+    {
+      "role": "Bot",
+      "content": "Thank you for choosing me to assist you on the process. If you can ask me if you get confused"
+    }
+  ]
+}
