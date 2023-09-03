@@ -11,7 +11,7 @@ import { useGetMessagesQuery } from "@/store/features/chat/message-history-api";
 import { mdiSend } from "@mdi/js";
 import Icon from "@mdi/react";
 import { count } from "console";
-import Chatbot from "@/pages/chat";
+import Chatbot from "@/pages/chat/chats";
 
 interface chatHistory {
   role: string;
